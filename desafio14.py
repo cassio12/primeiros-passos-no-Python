@@ -4,19 +4,20 @@
 # acertar o valor exiba uma mensegem.
 
 # crie um programa q sorteia um valor entre 1 e 30 e receba
-# um valor do usuario. verifique se ele acertou, dê a ele 3 chancesde tentar.  
+# um valor do usuario. verifique se ele acertou, dê a ele 3 chances de tentar.  
 # 
 # 
 
-from random import	
+import random
 
-number = random.randint(1,25)	
-	print(number)
+number = random.randint(1,20)	
+	
 numero_de_tentativas = 0
 
-while n°_de_tentativas < 2:
- 	tentativa = int(input())
+while numero_de_tentativas < 2:
+ 	tentativa = int(input('escreva um numero '))
  	numero_de_tentativa = numero_de_tentativas + 1
 if tentativa == number:
- 	print('vc acertou')
-
+ 	print('vc acertou' + srt(numero_de_tentativas) + ' vezes')
+else:
+	print('vc errou. o numro é ' + number)
