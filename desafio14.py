@@ -14,10 +14,13 @@ number = random.randint(1,20)
 	
 numero_de_tentativas = 0
 
-while numero_de_tentativas < 2:
+while tentativas < 3:
  	tentativa = int(input('escreva um numero '))
- 	numero_de_tentativa = numero_de_tentativas + 1
-if tentativa == number:
- 	print('vc acertou' + srt(numero_de_tentativas) + ' vezes')
+ 	print(number)
+ 	tentativas = tentativas + 1
+ 	
+	if tentativa == number:
+ 		print('vc acertou')
+ 		break
 else:
-	print('vc errou. o numro é ' + number)
+	print('vc errou. o numero é ' + str(number))
